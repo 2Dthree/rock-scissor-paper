@@ -83,7 +83,7 @@ class Player:
             result += " " + str(card)
         return result
 
-print("--------Rock Scissor Paper--------")
+print("--------Rock Scissors Paper--------")
 d1 = Deck()
 d2 = Deck()
 p1 = Player("Player 1")
