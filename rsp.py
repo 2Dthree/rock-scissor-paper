@@ -86,11 +86,11 @@ class Player:
 print("--------Rock Scissor Paper--------")
 d1 = Deck()
 d2 = Deck()
-print("----------Deck generated----------")
-p1 = Player("문지훈")
+p1 = Player("Player 1")
 p1.getCardsFromDeck(d1)
-p2 = Player("박지상")
+p2 = Player("Player 2")
 p2.getCardsFromDeck(d2)
+
 while p1.hasAllType() and p2.hasAllType():
     round += 1
     print(str(round) + ordinal(round) + "\tpoint: " + str(p1.point) + " " + str(p1))
@@ -114,6 +114,7 @@ while p1.hasAllType() and p2.hasAllType():
         print(p2.name + " won.")
     else:
         print("Draw.")
+
 print("-------------Game end-------------")
 print(p1.name + "'s point is " + str(p1.point) + ", and " + p2.name + "'s point is " + str(p2.point) + ".")
 if p1.point > p2.point:
